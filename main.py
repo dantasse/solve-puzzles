@@ -23,15 +23,23 @@ jinja_environment = jinja2.Environment(
 
 class MainPage(webapp2.RequestHandler):
     def get(self):
-        # template_values = {
-        #     'greetings': greetings,
-        #     'url': url,
-        #     'url_linktext': url_linktext,
-        # }
+        # cookie_id = self.request.cookies.get('solve_puzzles_id')
+        # if cookie_id and User.get_by_id(int(cookie_id)):
+            #(render already_started.html)
+        # else:
+            #(render index.html)
         template_values = {}
         template = jinja_environment.get_template('index.html')
         self.response.out.write(template.render(template_values))
 
+class Page2(webapp2.RequestHandler):
+    def get(self):
+        template_values = {}
+        template = jinja_environment.get_template('page2.html')
+        self.response.out.write(template.render(template_values))
+
+
 app = webapp2.WSGIApplication([
-    ('/', MainPage)
+    ('/', MainPage),
+    ('/signin', Page2)
 ], debug=True)

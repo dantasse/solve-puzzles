@@ -12,6 +12,9 @@ handlers:
 - url: /
   script: main.app
 
+- url: /signin
+  script: main.app
+
 - url: /index\.html
   script: main.app
 

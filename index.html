@@ -35,7 +35,9 @@
         <ul>
           <li> <input type="checkbox" name="social_network" id="facebook" value="facebook" /> <label for="facebook">Facebook</label> </li>
           <li> <input type="checkbox" name="social_network" id="twitter" value="twitter" /> <label for="twitter">Twitter</label> </li>
+          <li> <input type="checkbox" name="social_network" id="googleplus" value="googleplus" /> <label for="googleplus">Google+</label> </li>
           <li> <input type="checkbox" name="social_network" id="myspace" value="myspace" /> <label for="myspace">MySpace</label> </li>
+          <li> <input type="checkbox" name="social_network" id="tumblr" value="tumblr" /> <label for="tumblr">Tumblr</label> </li>
           <li> <input type="checkbox" name="social_network" id="instagram" value="instagram" /> <label for="instagram">Instagram</label> </li>
         </ul>
 
@@ -43,14 +45,16 @@
         <p>Results will be posted on a public forum. OR You and all other players will be sent a link where you can view everyone's results after you play. OR No data will be saved about your interaction with this game.</p>
         <p>How would you like to be identified within the game?</p>
          <ul>
-          <li> <input type="radio" name="identity_type" id="anonymous" value="anonymous" /> <label for="anonymous">Anonymous</label> </li>
+          <li> <input type="radio" name="identity_type" id="anonymous" value="anonymous" /> <label for="anonymous">Anonymous (further setup on the next page)</label> </li>
           <li> <input type="radio" name="identity_type" id="realname" value="realname" /> <label for="realname">Your name (you'll be able to enter it on the next page)</label> </li>
           <li> <input type="radio" name="identity_type" id="" value="username" /> <label for="username">User name (you'll be able to create one on the next page)</label> </li>
           <li> <input type="radio" name="identity_type" id="facebook_account" value="facebook_account" /> <label for="facebook_account">Login with Facebook (you'll be able to connect your Facebook account on the next page)</label> </li>
         </ul>
+        
 
-        <input type="submit" value="Continue" />
-
+        <form name="input" action="signin" method="get">
+          <input type="submit" value="Continue" />
+        </form>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
