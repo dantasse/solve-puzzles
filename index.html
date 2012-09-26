@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <h2>Solve Puzzles</h2>
+        <p>Please help us beta-test the latest version of some online puzzles we're making.</p>
+        <p>But first, we'd like to know a bit about you. How old are you? (You must be at least 18 years old to test this game.)</p>
+        <input type="text" id="age" value="" />
+
+        <p>What is your gender?</p>
+        <input type="text" id="gender" value="" />
+
+        <p>Which of the following social network sites do you use?</p>
+        
+        <ul>
+          <li> <input type="checkbox" name="social_network" id="facebook" value="facebook" /> <label for="facebook">Facebook</label> </li>
+          <li> <input type="checkbox" name="social_network" id="twitter" value="twitter" /> <label for="twitter">Twitter</label> </li>
+          <li> <input type="checkbox" name="social_network" id="myspace" value="myspace" /> <label for="myspace">MySpace</label> </li>
+          <li> <input type="checkbox" name="social_network" id="instagram" value="instagram" /> <label for="instagram">Instagram</label> </li>
+        </ul>
+
+        <p>You're going to be competing against other players. The winner will be the one who solves the puzzles in the least time. OR You're going to be collaborating with other players. Your team will be competing against other teams, trying to solve the puzzles in the least time.</p>
+        <p>Results will be posted on a public forum. OR You and all other players will be sent a link where you can view everyone's results after you play. OR No data will be saved about your interaction with this game.</p>
+        <p>How would you like to be identified within the game?</p>
+         <ul>
+          <li> <input type="radio" name="identity_type" id="anonymous" value="anonymous" /> <label for="anonymous">Anonymous</label> </li>
+          <li> <input type="radio" name="identity_type" id="realname" value="realname" /> <label for="realname">Your name (you'll be able to enter it on the next page)</label> </li>
+          <li> <input type="radio" name="identity_type" id="" value="username" /> <label for="username">User name (you'll be able to create one on the next page)</label> </li>
+          <li> <input type="radio" name="identity_type" id="facebook_account" value="facebook_account" /> <label for="facebook_account">Login with Facebook (you'll be able to connect your Facebook account on the next page)</label> </li>
+        </ul>
+
+        <input type="submit" value="Continue" />
+
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <script> -->
+        <!--     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; -->
+        <!--     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; -->
+        <!--     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js'; -->
+        <!--     s.parentNode.insertBefore(g,s)}(document,'script')); -->
+        <!-- </script> -->
+    </body>
+</html>
